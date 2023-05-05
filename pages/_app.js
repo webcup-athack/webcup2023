@@ -10,18 +10,18 @@ import Preloader from "../components/common/preloader/preloader";
 import ScrollTop from "../components/common/scroll-top";
 import "../styles/css/app.css";
 import "../styles/css/main.css";
+import {APP_NAME} from "../config"
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
 				{/* common title */}
-				<title>fugu</title>
+				<title>{APP_NAME}</title>
 			</Head>
 			<Layout>
 				<Component {...pageProps} />
 			</Layout>
-
 			<ScrollTop />
 			<Preloader />
 		</>

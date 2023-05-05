@@ -78,9 +78,9 @@ export default function FilterGallaryFour() {
 										which don't look even slightly believable.
 									</p>
 									<Link href={"single-portfolio"} legacyBehavior>
-										<a className="fugu-icon-btn">
+										{/* <a className="fugu-icon-btn"> */}
 											Discover More <img src="/images/svg/arrow-black-right.svg" alt="" />
-										</a>
+										{/* </a> */}
 									</Link>
 								</div>
 							</div>

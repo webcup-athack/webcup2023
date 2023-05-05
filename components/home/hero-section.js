@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { APP_NAME } from "../../config";
 
 /* eslint-disable @next/next/no-img-element */
 export default function HeroSection() {
@@ -9,13 +10,13 @@ export default function HeroSection() {
 					<div className="col-xl-6 col-lg-7">
 						<div className="fugu-hero-content">
 							<h1 className="wow fadeInUpX" data-wow-delay="0s">
-								The crypto trading app for the next-gen
+								{APP_NAME}
 							</h1>
 							<p className="wow fadeInUpX" data-wow-delay="0.25s">
-								Fugu is the app that gives you access to trading tools that you can actively buy & sell
+								{APP_NAME} is the app that gives you access to trading tools that you can actively buy & sell
 								digital currencies in an optimal way.
 							</p>
-							<div className="fugu-app-btn-wrap wow fadeInUpX" data-wow-delay="0.40s">
+							{/* <div className="fugu-app-btn-wrap wow fadeInUpX" data-wow-delay="0.40s">
 								<Link href={"contact"} legacyBehavior>
 									<a className="fugu-app-btn">
 										<img src="/images/all-img/app-store.png" alt="title" />
@@ -26,8 +27,8 @@ export default function HeroSection() {
 										<img src="/images/all-img/play-store.png" alt="title" />
 									</a>
 								</Link>
-							</div>
-							<div className="fugu-hero-client-area wow fadeInUpX" data-wow-delay="0.50s">
+							</div> */}
+							{/* <div className="fugu-hero-client-area wow fadeInUpX" data-wow-delay="0.50s">
 								<div className="fugu-hero-client-wrap">
 									<div className="fugu-hero-client-thumb">
 										<img src="/images/all-img/client.png" alt="title" />
@@ -58,18 +59,18 @@ export default function HeroSection() {
 										<li>Rating</li>
 									</ul>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className="col-xl-6 col-lg-5">
 						<div className="fugu-hero-thumb">
 							<img src="/images/all-img/hand-mocup.png" alt="title" />
-							<div className="fugu-shape2">
+							{/* <div className="fugu-shape2">
 								<img src="/images/shape/shape2.png" alt="title" />
-							</div>
-							<div className="fugu-hero-star">
+							</div> */}
+							{/* <div className="fugu-hero-star">
 								<img src="/images/all-img/star-shape.png" alt="title" />
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

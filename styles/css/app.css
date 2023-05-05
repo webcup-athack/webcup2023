@@ -4442,14 +4442,20 @@ a.fugu-app-btn:last-child {
 }
 
 .fugu-hero-thumb {
+	/* display: none; */
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
+.fugu-hero-thumb img{
+	/* display: none; */
+	max-width: 60%;
+}
 @media (max-width: 1399px) {
 	.fugu-hero-thumb {
 		right: -10%;
-	}
+	max-width: 100%;
+}
 }
 @media (max-width: 1199px) {
 	.fugu-hero-thumb {
@@ -5200,7 +5206,7 @@ a.fugu-app-btn:last-child {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	text-fill-color: transparent;
+	/* text-fill-color: transparent; */
 }
 .fugu--counter-data p {
 	font-size: 18px;
@@ -6659,7 +6665,7 @@ a.fugu-faq-btn:hover {
 	margin: 0 auto;
 }
 .fugu-testimonial-slider2 .fugu-testimonial-card2 {
-	/* margin: 0 32px; */
+	margin: 0 32px;
 }
 @media (max-width: 1399px) {
 	.fugu-testimonial-slider2 .fugu-testimonial-card2 {

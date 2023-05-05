@@ -11,45 +11,46 @@ import HeaderHomeThree from "./header/header-home-three";
 import HeaderHomeTwo from "./header/header-home-two";
 
 export default function Layout({ children }) {
-	const headerChooseFunc = () => {
-		switch (children.props.header) {
-			case "one":
-				return <HeaderHomeOne />;
-			case "two":
-				return <HeaderHomeTwo />;
-			case "three":
-				return <HeaderHomeThree />;
-			case "four":
-				return <HeaderHomeFour />;
-			case "five":
-				return <HeaderHomeFive />;
-			case "six":
-				return <HeaderErrorSix />;
-			default:
-				return <HeaderHomeOne />;
-		}
-	};
-	const footerChooseFunc = () => {
-		switch (children.props.footer) {
-			case "one":
-				return <FooterHomeOne />;
-			case "two":
-				return <FooterHomeTwo />;
-			case "three":
-				return <FooterHomeThree />;
-			case "four":
-				return <FooterHomeFour />;
-			case "five":
-				return <FooterHomeFive />;
-			default:
-				return <FooterHomeOne />;
-		}
-	};
-	return (
-		<>
-			{headerChooseFunc()}
-			<main>{children}</main>
-			{footerChooseFunc()}
-		</>
-	);
+  const headerChooseFunc = () => {
+    return <HeaderHomeThree />;
+    // switch (children.props.header) {
+    // 	case "one":
+    // 		return <HeaderHomeOne />;
+    // 	case "two":
+    // 		return <HeaderHomeTwo />;
+    // 	case "three":
+    // 		return <HeaderHomeThree />;
+    // 	case "four":
+    // 		return <HeaderHomeFour />;
+    // 	case "five":
+    // 		return <HeaderHomeFive />;
+    // 	case "six":
+    // 		return <HeaderErrorSix />;
+    // 	default:
+    // 		return <HeaderHomeOne />;
+    // }
+  };
+  const footerChooseFunc = () => {
+    switch (children.props.footer) {
+      case "one":
+        return <FooterHomeOne />;
+      case "two":
+        return <FooterHomeTwo />;
+      case "three":
+        return <FooterHomeThree />;
+      case "four":
+        return <FooterHomeFour />;
+      case "five":
+        return <FooterHomeFive />;
+      default:
+        return <FooterHomeOne />;
+    }
+  };
+  return (
+    <div style={{}}>
+      {headerChooseFunc()}
+      <main>{children}</main>
+      {footerChooseFunc()}
+    </div>
+  );
 }

@@ -1,13 +1,8 @@
-import VideoSectionOne from "../components/common/video/video-section-one";
-import BreadcrumbSection from "../components/team/breadcrumb-section";
-import TeamSection from "../components/team/team-section";
+import InnerSection from "../components/team-dark/innser-section";
 
 export default function Team() {
-	return (
-		<>
-			<BreadcrumbSection />
-			<VideoSectionOne />
-			<TeamSection />
-		</>
-	);
+  return <InnerSection />;
+}
+export async function getStaticProps() {
+  return { props: { header: "three", footer: "three" } };
 }
